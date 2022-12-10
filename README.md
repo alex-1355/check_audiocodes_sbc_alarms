@@ -2,7 +2,7 @@
 
 A simple Nagios Plugin to monitor the alarms of AudioCodes SBCs.
 
-## Description
+### Description
 
 This script extracts the alarm text, severity and probable cause values via SNMPv2.
 
@@ -22,7 +22,7 @@ This script extracts the alarm text, severity and probable cause values via SNMP
 
 Copying it to your local plugin folder should be enough
 
-## Usage
+### Usage
 
 python3 check_audiocodes_sbc_alarms.py HOSTNAME SNMPv2-COMMUNITY
 
@@ -43,7 +43,7 @@ define service {
   check_command                  check_audiocodes_sbc_alarms!MySecretSnmpCommunity
 }
 ````
-## Output
+### Output
 
 ![OK](images/output_ok.jpg)
 
@@ -51,6 +51,6 @@ define service {
 
 ![CRITICAL](images/output_critical.jpg)
 
-## License
+### License
 
 This project is licensed under the GNU General Public License v3.0 License - see the LICENSE.md file for details
