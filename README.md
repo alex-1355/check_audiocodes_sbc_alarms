@@ -34,7 +34,7 @@ python3 check_audiocodes_sbc_alarms.py HOSTNAME SNMPv2-COMMUNITY
 
 ### OMD command and service definition
 
-The command and service definitions for OMD sould look something like this:
+The command and service definitions for OMD should look something like this:
 
 ````
 define command {
