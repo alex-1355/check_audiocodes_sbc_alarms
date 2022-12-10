@@ -2,9 +2,11 @@
 
 A simple Nagios Plugin to monitor the alarms of AudioCodes SBCs.
 
+
 ### Description
 
 This script extracts the alarm text, severity and probable cause values via SNMPv2.
+
 
 ### Dependencies
 
@@ -12,19 +14,23 @@ This script extracts the alarm text, severity and probable cause values via SNMP
 - OMD, Check_MK or other Monitoring solutions
 - SNMPv2 enabled on your AudioCodes SBC
 
+
 ### Tested on the following systems
 
 - OMD 5.0 (Ubuntu 22) with Python 3.10
 - AudioCodes Mediant 2600 SBC (SW 7.20)
 - AudioCodes VE SBC (SW 7.20)
 
-### Installing
+
+### Installation
 
 Copying it to your local plugin folder should be enough
+
 
 ### Usage
 
 python3 check_audiocodes_sbc_alarms.py HOSTNAME SNMPv2-COMMUNITY
+
 
 ### OMD command and service definition
 
@@ -43,6 +49,8 @@ define service {
   check_command                  check_audiocodes_sbc_alarms!MySecretSnmpCommunity
 }
 ````
+
+
 ### Output
 
 ![OK](images/output_ok.jpg)
@@ -50,6 +58,7 @@ define service {
 ![WARNING](images/output_warning.jpg)
 
 ![CRITICAL](images/output_critical.jpg)
+
 
 ### License
 
